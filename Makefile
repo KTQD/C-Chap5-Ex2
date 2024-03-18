@@ -2,7 +2,7 @@ a.out:
 	gcc make.c
 
 clean:
-	rm hello
+	rm main
 
 test: a.out
 	bash test.sh
