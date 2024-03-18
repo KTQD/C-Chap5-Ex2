@@ -1,5 +1,5 @@
 a.out:
-	gcc hello.c
+	gcc make.c
 
 clean:
 	rm hello
