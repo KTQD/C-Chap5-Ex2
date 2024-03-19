@@ -1,4 +1,4 @@
-all: build test_command
+all: build test2
 build:
 	gcc main.c
 test:
