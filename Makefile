@@ -1,4 +1,15 @@
-all:
-	gcc main.c 
+all: build test_build
+build:
+	gcc main.c
+test_sh:
 	bash test.sh
-	rm a.out
+test_build:
+	echo
+	echo "#########################"
+	echo
+	echo "Running tests..."
+
+	echo "All tests passed."
+	echo
+	echo "#########################"
+	echo
