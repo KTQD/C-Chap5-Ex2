@@ -1,6 +1,8 @@
-all: build test
+all: build test clean
 build:
 	gcc main.c
+clean:
+	rm a.out
 test:
 	bash test.sh
 test1:
