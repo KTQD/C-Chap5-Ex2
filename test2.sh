@@ -11,11 +11,11 @@ expected_output_2="Done"
 
 # Kiểm tra và xoá "Hello, World!" khỏi output
 if echo "$output" | grep -q "$expected_output_1"; then
-echo "Pass: Output 'Hello, World!' is correct"
+echo "Passed"
 # Xoá "Hello, World!" khỏi output
 modified_output=$(echo "$output" | sed "s/$expected_output_1//")
 else
-echo "Expected '$expected_output_1' but got: $output"
+echo "Expected: '$expected_output_1', but got: $output"
 exit 1
 fi
 
@@ -23,7 +23,7 @@ fi
 if echo "$modified_output" | grep -q "$expected_output_2"; then
 echo "Pass: Output 'Done' is correct"
 else
-echo "Expected '$expected_output_2' after removing 'Hello, World!' but got: $modified_output"
+echo "Expected: '$expected_output_2', but got: $modified_output"
 exit 1
 fi
 
