@@ -1,9 +1,13 @@
-all: build test_build
+all: build test_command
 build:
 	gcc main.c
-test_sh:
+test:
 	bash test.sh
-test_build:
+test1:
+	bash test1.sh
+test2:
+	bash test2.sh
+test_command:
 	echo
 	echo "#########################"
 	echo
