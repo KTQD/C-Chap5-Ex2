@@ -22,8 +22,5 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y gcc
 
-    - name: Compile code
-      run: gcc main.c -o a.out
-
-    - name: Run tests
-      run: bash test.sh
+    - name: Makefile
+      run: make -s
