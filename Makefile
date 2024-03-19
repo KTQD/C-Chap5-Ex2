@@ -1,8 +1,4 @@
-a.out:
-	gcc make.c
-
-clean:
-	rm main
-
-test: a.out
+all:
+	gcc main.c 
 	bash test.sh
+	rm a.out
