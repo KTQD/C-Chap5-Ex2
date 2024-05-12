@@ -1,18 +1,26 @@
 #include <stdio.h>
 
 int main() {
-    int num;
-    unsigned long long factorial = 1;
+    int num_terms, first = 0, second = 1, next;
 
     printf("Enter a number: ");
-    scanf("%d", &num);
+    scanf("%d", &num_terms);
 
-    // Calculate factorial using a loop
-    for (int i = 1; i <= num; ++i) {
-        factorial *= i;
+    printf("Fibonacci sequence: ");
+
+    // Generate Fibonacci sequence using a loop
+    for (int i = 0; i < num_terms; ++i) {
+        if (i <= 1)
+            next = i;
+        else {
+            next = first + second;
+            first = second;
+            second = next;
+        }
+        printf("%d ", next);
     }
 
-    printf("Factorial of %d is %llu\n", num, factorial);
+    printf("\n");
 
     return 0;
 }

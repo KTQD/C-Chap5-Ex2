@@ -10,7 +10,7 @@ output=$(echo $input | ./a.out)
 
 # Định nghĩa output mong muốn cho từng phần
 expected_output1="Enter a number:"
-expected_output2="Factorial of 5 is 120"
+expected_output2="Fibonacci sequence: 0 1 1 2 3"
 
 # Kiểm tra expected_output1 và xoá khỏi output
 if echo "$output" | grep -q "$expected_output1"; then
@@ -37,7 +37,7 @@ output=$(echo $input | ./a.out)
 
 # Định nghĩa output mong muốn cho từng phần
 expected_output1="Enter a number:"
-expected_output2="Factorial of 7 is 5040"
+expected_output2="Fibonacci sequence: 0 1 1 2 3 5 8"
 
 # Kiểm tra expected_output1 và xoá khỏi output
 if echo "$output" | grep -q "$expected_output1"; then

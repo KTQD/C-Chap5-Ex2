@@ -1,8 +1,8 @@
-## Factorial Calculation with a Loop:
-Write a C program to:
-- Calculate the factorial of a given number using a loop. 
-- Prompt the user to enter a positive integer and then compute its factorial using a loop. 
-- Display the factorial as the output.
+## Fibonacci Sequence Generation:
+Write a C program to generate the Fibonacci sequence up to a specified number of terms using a loop. 
+- The program should prompt the user to enter the number of terms and then generate the Fibonacci sequence using a loop. 
+- Display the Fibonacci sequence as the output.
+
 ## Run and Test
 ### Testcase 1:
 Prompt input:
@@ -11,7 +11,7 @@ Enter a number: 5
 ```
 Output:
 ```
-Factorial of 5 is 120
+Fibonacci sequence: 0 1 1 2 3
 ```
 ### Testcase 2:
 Prompt input:
@@ -20,5 +20,5 @@ Enter a number: 7
 ```
 Output:
 ```
-Factorial of 7 is 5040
+Fibonacci sequence: 0 1 1 2 3 5 8
 ```
