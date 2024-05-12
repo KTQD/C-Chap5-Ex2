@@ -1,9 +1,0 @@
----
-triple:          'x86_64-apple-darwin'
-binary-path:     '/Users/mac/C-Makefile/main'
-relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _centigradeToFahrenheit, symObjAddr: 0x0, symBinAddr: 0x100003C70, symSize: 0x30 }
-  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _centigradeToFahrenheit, symObjAddr: 0x0, symBinAddr: 0x100003C70, symSize: 0x30 }
-  - { offsetInCU: 0x69, offset: 0x69, size: 0x8, addend: 0x0, symName: _printWeatherCondition, symObjAddr: 0x30, symBinAddr: 0x100003CA0, symSize: 0x110 }
-  - { offsetInCU: 0x8D, offset: 0x8D, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x140, symBinAddr: 0x100003DB0, symSize: 0x104 }
-...

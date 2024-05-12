@@ -1,4 +1,4 @@
-all: build test_2output clean
+all: build test_2intput_2output clean
 build:
 	gcc main.c
 clean:

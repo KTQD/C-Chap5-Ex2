@@ -4,13 +4,13 @@ echo
 
 echo "####################################################################################################"
 # Đặt đầu vào cho chương trình
-input="10 5"
+input="5"
 # Chạy chương trình và lưu kết quả vào biến output
 output=$(echo $input | ./a.out)
 
 # Định nghĩa output mong muốn cho từng phần
-expected_output1="Enter length and width:"
-expected_output2="The area of the rectangle is: 50"
+expected_output1="Enter a number:"
+expected_output2="Factorial of 5 is 120"
 
 # Kiểm tra expected_output1 và xoá khỏi output
 if echo "$output" | grep -q "$expected_output1"; then
@@ -31,13 +31,13 @@ exit 1
 fi
 echo "####################################################################################################"
 # Đặt đầu vào cho chương trình
-input="-10 5"
+input="7"
 # Chạy chương trình và lưu kết quả vào biến output
 output=$(echo $input | ./a.out)
 
 # Định nghĩa output mong muốn cho từng phần
-expected_output1="Enter length and width:"
-expected_output2="The area of the rectangle is: -50"
+expected_output1="Enter a number:"
+expected_output2="Factorial of 7 is 5040"
 
 # Kiểm tra expected_output1 và xoá khỏi output
 if echo "$output" | grep -q "$expected_output1"; then
