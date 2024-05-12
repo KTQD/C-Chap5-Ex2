@@ -6,7 +6,7 @@ echo "Running tests..."
 output=$(./a.out)
 
 # Định nghĩa output mong muốn cho từng phần
-expected_output1="Hello, World!"
+expected_output1="edcba"
 
 # Kiểm tra expected_output1 và xoá khỏi output
 if echo "$output" | grep -q "$expected_output1"; then
